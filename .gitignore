@@ -1,0 +1,32 @@
+```
+# Logs
+error_log
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Dependencies
+vendor/
+node_modules/
+
+# Build artifacts
+dist/
+build/
+*.min.js
+*.min.css
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PHP
+*.php~
+```
