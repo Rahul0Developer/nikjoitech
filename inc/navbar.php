@@ -2,6 +2,11 @@
 // inc/navbar.php
 $current = basename($_SERVER['PHP_SELF'], '.php');
 $current_full = basename($_SERVER['PHP_SELF']);
+// Helper function for clean URLs (no .php extension)
+function cleanUrl($page) {
+  if ($page === 'index') return '/';
+  return '/' . $page;
+}
 ?>
 <div id="page-loader">
   <div class="loader-inner">
@@ -17,7 +22,7 @@ $current_full = basename($_SERVER['PHP_SELF']);
 
 <nav class="navbar" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="index.php" class="nav-logo" aria-label="Nikoji Technologies Home">
+    <a href="/" class="nav-logo" aria-label="Nikoji Technologies Home">
       <img src="assets/images/logo.jpg" alt="Nikoji Technologies Logo" width="42" height="42">
       <div class="nav-logo-text">
         <strong>Nikoji Technologies</strong>
@@ -26,22 +31,22 @@ $current_full = basename($_SERVER['PHP_SELF']);
     </a>
 
     <div class="nav-links">
-      <a href="index.php" <?= $current==='index'?'class="active"':'' ?>>Home</a>
+      <a href="/" <?= $current==='index'?'class="active"':'' ?>>Home</a>
       <div class="has-dropdown">
-        <a href="services.php" <?= $current==='services'?'class="active"':'' ?>>Services ▾</a>
+        <a href="/services" <?= $current==='services'?'class="active"':'' ?>>Services ▾</a>
         <div class="nav-dropdown">
-          <a href="automation.php">⚙️ Automation</a>
-          <a href="design.php">🔧 Design</a>
-          <a href="testing.php">🔬 Testing</a>
-          <a href="ems.php">📦 EMS</a>
-          <a href="consultancy.php">🤝 Consultancy</a>
-          <a href="innovation.php">🚀 Innovation</a>
+          <a href="/automation">⚙️ Automation</a>
+          <a href="/design">🔧 Design</a>
+          <a href="/testing">🔬 Testing</a>
+          <a href="/ems">📦 EMS</a>
+          <a href="/consultancy">🤝 Consultancy</a>
+          <a href="/innovation">🚀 Innovation</a>
         </div>
       </div>
-      <a href="automation.php" <?= $current==='automation'?'class="active"':'' ?>>Automation</a>
-      <a href="ems.php" <?= $current==='ems'?'class="active"':'' ?>>EMS</a>
-      <a href="innovation.php" <?= $current==='innovation'?'class="active"':'' ?>>Innovation</a>
-      <a href="contact.php" class="nav-cta" <?= $current==='contact'?'style="opacity:0.85"':'' ?>>Let's Talk</a>
+      <a href="/automation" <?= $current==='automation'?'class="active"':'' ?>>Automation</a>
+      <a href="/ems" <?= $current==='ems'?'class="active"':'' ?>>EMS</a>
+      <a href="/innovation" <?= $current==='innovation'?'class="active"':'' ?>>Innovation</a>
+      <a href="/contact" class="nav-cta" <?= $current==='contact'?'style="opacity:0.85"':'' ?>>Let's Talk</a>
     </div>
 
     <div class="nav-right">
@@ -56,13 +61,13 @@ $current_full = basename($_SERVER['PHP_SELF']);
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
-  <a href="index.php">Home</a>
-  <a href="automation.php">Automation</a>
-  <a href="design.php">Design</a>
-  <a href="testing.php">Testing</a>
-  <a href="ems.php">EMS</a>
-  <a href="innovation.php">Innovation</a>
-  <a href="consultancy.php">Consultancy</a>
-  <a href="services.php">All Services</a>
-  <a href="contact.php" class="mobile-cta">Let's Talk →</a>
+  <a href="/">Home</a>
+  <a href="/automation">Automation</a>
+  <a href="/design">Design</a>
+  <a href="/testing">Testing</a>
+  <a href="/ems">EMS</a>
+  <a href="/innovation">Innovation</a>
+  <a href="/consultancy">Consultancy</a>
+  <a href="/services">All Services</a>
+  <a href="/contact" class="mobile-cta">Let's Talk →</a>
 </div>

@@ -188,8 +188,8 @@
       <h2>Ready to Start Production?</h2>
       <p>Send us your Gerber files, BOM, and quantity — we'll get back with a quote within 24 hours.</p>
       <div class="btn-group">
-        <a href="contact.php" class="btn btn-gold btn-lg">Request EMS Quote</a>
-        <a href="testing.php" class="btn btn-white">Testing Services →</a>
+        <a href="/contact" class="btn btn-gold btn-lg">Request EMS Quote</a>
+        <a href="/testing" class="btn btn-white">Testing Services →</a>
       </div>
     </div>
   </div>

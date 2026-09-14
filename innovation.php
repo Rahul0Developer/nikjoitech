@@ -195,8 +195,8 @@
       <h2>Have an Engineering Challenge?</h2>
       <p>Bring us your toughest problems — we thrive on turning complex industrial challenges into elegant solutions.</p>
       <div class="btn-group">
-        <a href="contact.php" class="btn btn-gold btn-lg">Discuss Your Challenge</a>
-        <a href="consultancy.php" class="btn btn-white">Consultancy →</a>
+        <a href="/contact" class="btn btn-gold btn-lg">Discuss Your Challenge</a>
+        <a href="/consultancy" class="btn btn-white">Consultancy →</a>
       </div>
     </div>
   </div>

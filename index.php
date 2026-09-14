@@ -3,7 +3,8 @@
 $pageTitle = "Nikoji Technologies | Industrial Automation & EMS Partner in Delhi NCR";
 $pageDescription = "Leading industrial automation company in Delhi NCR offering PLC/SCADA systems, PCB design, electronics manufacturing (EMS), testing solutions & engineering consultancy. 15+ years experience, 200+ projects delivered.";
 $pageKeywords = "industrial automation Delhi, PLC programming, SCADA systems, PCB design India, EMS manufacturer, electronics manufacturing services, ATE testing, VFD integration, control panel design, HMI development";
-$canonicalUrl = "https://nikojitechnologies.com/index.php";
+// Clean URL without .php extension
+$canonicalUrl = "https://nikojitechnologies.com/";
 ?>
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
@@ -300,7 +301,7 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
 
       <div class="hero-content">
         <div class="hero-badge">
-          <span></span> ISO 9001:2015 Certified Company
+          <span></span> Engineering Excellence Since 2009
         </div>
         <h1>
           Transform Your Business with<br>
@@ -311,7 +312,7 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
           Nikoji Technologies is Delhi NCR's trusted partner for industrial automation, PCB design, EMS, and testing solutions. We deliver turnkey systems that boost productivity by 40% while reducing operational costs — backed by 15+ years of engineering excellence.
         </p>
         <div class="hero-actions">
-          <a href="contact.php" class="btn btn-primary btn-lg" aria-label="Get a free consultation">
+          <a href="/contact" class="btn btn-primary btn-lg" aria-label="Get a free consultation">
             Get Free Consultation
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
@@ -330,10 +331,6 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
         </div>
         <!-- Trust badges -->
         <div style="margin-top:32px;display:flex;gap:20px;flex-wrap:wrap;align-items:center">
-          <div style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:var(--text-3)">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#006B4F" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <span>ISO 9001:2015 Certified</span>
-          </div>
           <div style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:var(--text-3)">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#006B4F" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
             <span>MSME Registered</span>
@@ -513,8 +510,8 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
           Founded on the principle that great industrial systems must be both technically sound and operationally reliable, we work closely with our clients from initial feasibility to full deployment — ensuring every system performs exactly as designed, day after day.
         </p>
         <div style="display:flex;gap:14px;flex-wrap:wrap">
-          <a href="services.php" class="btn btn-primary">Our Services</a>
-          <a href="contact.php" class="btn btn-outline">Get in Touch</a>
+          <a href="/services" class="btn btn-primary">Our Services</a>
+          <a href="/contact" class="btn btn-outline">Get in Touch</a>
         </div>
       </div>
 
@@ -544,7 +541,7 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
           <p>PLC programming, SCADA systems, HMI development, VFD integration, servo drives, and custom motor control panels for complete factory automation.</p>
         </div>
         <div class="sp-card-footer">
-          <a href="automation.php">Learn more →</a>
+          <a href="/automation">Learn more →</a>
         </div>
       </div>
 
@@ -557,7 +554,7 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
           <p>PCB schematic and layout design, embedded systems firmware, CAD mechanical modeling, and UI/UX for industrial interfaces.</p>
         </div>
         <div class="sp-card-footer">
-          <a href="design.php">Learn more →</a>
+          <a href="/design">Learn more →</a>
         </div>
       </div>
 
@@ -570,7 +567,7 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
           <p>ICT, FCT, ATE, and flying probe testing solutions ensuring your boards and assemblies meet the highest quality standards before deployment.</p>
         </div>
         <div class="sp-card-footer">
-          <a href="testing.php">Learn more →</a>
+          <a href="/testing">Learn more →</a>
         </div>
       </div>
 
@@ -583,7 +580,7 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
           <p>SMT, through-hole assembly, box build, and rapid prototyping — complete electronics manufacturing services under one roof.</p>
         </div>
         <div class="sp-card-footer">
-          <a href="ems.php">Learn more →</a>
+          <a href="/ems">Learn more →</a>
         </div>
       </div>
 
@@ -596,7 +593,7 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
           <p>Strategic industrial assessment, technology roadmapping, process optimization, and full deployment planning for your operations.</p>
         </div>
         <div class="sp-card-footer">
-          <a href="consultancy.php">Learn more →</a>
+          <a href="/consultancy">Learn more →</a>
         </div>
       </div>
 
@@ -609,14 +606,14 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
           <p>From discovery to prototype — our structured innovation process turns your industrial challenges into working, deployable solutions.</p>
         </div>
         <div class="sp-card-footer">
-          <a href="innovation.php">Learn more →</a>
+          <a href="/innovation">Learn more →</a>
         </div>
       </div>
 
     </div>
 
     <div style="text-align:center;margin-top:48px">
-      <a href="services.php" class="btn btn-outline">View All Services</a>
+      <a href="/services" class="btn btn-outline">View All Services</a>
     </div>
   </div>
 </section>
@@ -722,7 +719,7 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
       <h2>Ready to Automate Your Operations?</h2>
       <p>Let's discuss your project requirements. Our engineers are ready to help you find the right technical solution.</p>
       <div class="btn-group">
-        <a href="contact.php" class="btn btn-gold btn-lg">Start a Project</a>
+        <a href="/contact" class="btn btn-gold btn-lg">Start a Project</a>
         <a href="tel:+917678334459" class="btn btn-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18L6.6 2a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.82 17l.1-.08z"/></svg>
           +91 7678334459

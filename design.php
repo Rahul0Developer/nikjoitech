@@ -214,8 +214,8 @@
       <h2>Have a Design Project?</h2>
       <p>Share your requirements — we'll review your brief and provide a detailed proposal within 48 hours.</p>
       <div class="btn-group">
-        <a href="contact.php" class="btn btn-gold btn-lg">Send Your Brief</a>
-        <a href="testing.php" class="btn btn-white">Testing Services →</a>
+        <a href="/contact" class="btn btn-gold btn-lg">Send Your Brief</a>
+        <a href="/testing" class="btn btn-white">Testing Services →</a>
       </div>
     </div>
   </div>
