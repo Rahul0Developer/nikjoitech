@@ -133,6 +133,41 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
     .trust-text { font-size: 0.82rem; color: var(--text-3); }
     .trust-text strong { color: var(--text); }
 
+    /* Hero Video Background */
+    .hero-video-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .hero-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(12px) brightness(0.85);
+      transform: scale(1.1);
+      animation: subtleZoom 20s ease-in-out infinite alternate;
+    }
+    @keyframes subtleZoom {
+      from { transform: scale(1.05); }
+      to { transform: scale(1.15); }
+    }
+    .hero-video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(248,250,249,0.9) 0%, rgba(248,250,249,0.75) 40%, rgba(248,250,249,0.5) 100%);
+      backdrop-filter: blur(2px);
+    }
+    [data-theme="dark"] .hero-video-overlay {
+      background: linear-gradient(135deg, rgba(13,31,24,0.95) 0%, rgba(13,31,24,0.85) 40%, rgba(13,31,24,0.6) 100%);
+    }
+    
     /* Hero SVG Animation */
     .hero-visual {
       position: relative; display: flex; align-items: center; justify-content: center;
@@ -295,6 +330,14 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
      HERO
 ═════════════════════════════ -->
 <section class="hero" id="home" aria-label="Hero">
+  <!-- Hero Video Background -->
+  <div class="hero-video-wrap">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/images/Subject_A_cinematic_photorea.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
+  </div>
+  
   <div class="container">
     <div class="hero-inner">
 
@@ -481,10 +524,9 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
     <div class="about-split">
 
       <div class="about-visual-grid reveal-left">
-        <div class="about-card">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          <h4>Multi-Domain</h4>
-          <p>Automation, EMS, Design & Testing</p>
+        <!-- B2 Illustration Image 1 -->
+        <div class="about-card" style="padding:0;overflow:hidden;">
+          <img src="assets/images/B2_Illustration_1789372462492.png" alt="Industrial Automation System" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="about-card accent">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
@@ -496,10 +538,9 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
           <h4>Embedded Systems</h4>
           <p>PCB design to production</p>
         </div>
-        <div class="about-card">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <h4>Expert Team</h4>
-          <p>Engineers, developers, designers</p>
+        <!-- B2 Illustration Image 2 -->
+        <div class="about-card" style="padding:0;overflow:hidden;">
+          <img src="assets/images/B2_Illustration_1789372557138.png" alt="Electronics Manufacturing" style="width:100%;height:100%;object-fit:cover;">
         </div>
       </div>
 
@@ -677,9 +718,9 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
     </div>
 
     <div class="sectors-grid" data-stagger>
-      <div class="sector-card">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        <h4>Manufacturing</h4>
+      <!-- B2 Illustration Image 3 -->
+      <div class="sector-card" style="padding:0;overflow:hidden;">
+        <img src="assets/images/B2_Illustration_1789372619824.png" alt="Manufacturing Industry" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <div class="sector-card">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
@@ -689,6 +730,10 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
         <h4>Automotive</h4>
       </div>
+      <!-- B2 Illustration Image 4 -->
+      <div class="sector-card" style="padding:0;overflow:hidden;">
+        <img src="assets/images/B2_Illustration_1789372698935.png" alt="Healthcare Industry" style="width:100%;height:100%;object-fit:cover;">
+      </div>
       <div class="sector-card">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
         <h4>Healthcare</h4>
@@ -696,6 +741,10 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
       <div class="sector-card">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
         <h4>Oil & Gas</h4>
+      </div>
+      <!-- B2 Illustration Image 5 -->
+      <div class="sector-card" style="padding:0;overflow:hidden;">
+        <img src="assets/images/B2_Illustration_1789372742731.png" alt="Electronics Industry" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <div class="sector-card">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
