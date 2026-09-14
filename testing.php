@@ -212,8 +212,8 @@
       <h2>Need Reliable PCB Testing?</h2>
       <p>Tell us about your boards, volumes, and quality targets — we'll recommend the right test strategy.</p>
       <div class="btn-group">
-        <a href="contact.php" class="btn btn-gold btn-lg">Get Testing Quote</a>
-        <a href="ems.php" class="btn btn-white">EMS Services →</a>
+        <a href="/contact" class="btn btn-gold btn-lg">Get Testing Quote</a>
+        <a href="/ems" class="btn btn-white">EMS Services →</a>
       </div>
     </div>
   </div>

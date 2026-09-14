@@ -87,7 +87,7 @@
           <div class="service-section-header">
             <div class="num">1</div>
             <h2>Industrial Automation</h2>
-            <a href="automation.php">Full page →</a>
+            <a href="/automation">Full page →</a>
           </div>
           <div class="sub-services">
             <div class="sub-service"><h4>PLC Programming</h4><p>Ladder, STL, FBD, and SFC programming for all major PLC platforms including Siemens, Allen-Bradley, Mitsubishi, and Delta.</p></div>
@@ -103,7 +103,7 @@
           <div class="service-section-header">
             <div class="num">2</div>
             <h2>Electronics & Design</h2>
-            <a href="design.php">Full page →</a>
+            <a href="/design">Full page →</a>
           </div>
           <div class="sub-services">
             <div class="sub-service"><h4>PCB Design</h4><p>Schematic capture and multi-layer PCB layout using KiCad, Altium, and Eagle — from simple 2-layer to complex 12-layer high-speed boards.</p></div>
@@ -117,7 +117,7 @@
           <div class="service-section-header">
             <div class="num">3</div>
             <h2>Testing & Quality</h2>
-            <a href="testing.php">Full page →</a>
+            <a href="/testing">Full page →</a>
           </div>
           <div class="sub-services">
             <div class="sub-service"><h4>ICT — In-Circuit Test</h4><p>Bed-of-nails fixture testing for component verification, short/open detection, and power rail validation at production speed.</p></div>
@@ -131,7 +131,7 @@
           <div class="service-section-header">
             <div class="num">4</div>
             <h2>EMS & Manufacturing</h2>
-            <a href="ems.php">Full page →</a>
+            <a href="/ems">Full page →</a>
           </div>
           <div class="sub-services">
             <div class="sub-service"><h4>SMT Assembly</h4><p>Surface mount assembly with automated pick & place, solder paste printing, and lead-free reflow soldering.</p></div>
@@ -145,7 +145,7 @@
           <div class="service-section-header">
             <div class="num">5</div>
             <h2>Engineering Consultancy</h2>
-            <a href="consultancy.php">Full page →</a>
+            <a href="/consultancy">Full page →</a>
           </div>
           <div class="sub-services">
             <div class="sub-service"><h4>Automation Feasibility</h4><p>Independent technical and commercial assessment of automation opportunities with ROI modelling and implementation risk evaluation.</p></div>
@@ -159,7 +159,7 @@
           <div class="service-section-header">
             <div class="num">6</div>
             <h2>Software Development</h2>
-            <a href="contact.php">Enquire →</a>
+            <a href="/contact">Enquire →</a>
           </div>
           <div class="sub-services">
             <div class="sub-service"><h4>SCADA Logic Development</h4><p>Custom scripting, alarm strategies, trending, and historian configuration for WinCC, Ignition, and InTouch platforms.</p></div>
@@ -173,7 +173,7 @@
           <div class="service-section-header">
             <div class="num">7</div>
             <h2>Repair, Diagnostics & Support</h2>
-            <a href="contact.php">Enquire →</a>
+            <a href="/contact">Enquire →</a>
           </div>
           <div class="sub-services">
             <div class="sub-service"><h4>PLC Repair & Recovery</h4><p>Hardware diagnosis, program recovery, battery replacement, and I/O module repair for Siemens, Allen-Bradley, Mitsubishi, and Delta PLCs.</p></div>
@@ -194,7 +194,7 @@
       <h2>Can't Find What You Need?</h2>
       <p>If your engineering challenge isn't listed here, talk to us anyway — we may still be able to help or point you in the right direction.</p>
       <div class="btn-group">
-        <a href="contact.php" class="btn btn-gold btn-lg">Contact Our Engineers</a>
+        <a href="/contact" class="btn btn-gold btn-lg">Contact Our Engineers</a>
         <a href="tel:+917678334459" class="btn btn-white">+91 7678334459</a>
       </div>
     </div>

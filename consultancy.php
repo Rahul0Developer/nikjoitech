@@ -162,8 +162,8 @@
       <h2>Need an Independent Engineering Opinion?</h2>
       <p>Get expert guidance without the vendor bias — let's discuss your challenge in a no-obligation call.</p>
       <div class="btn-group">
-        <a href="contact.php" class="btn btn-gold btn-lg">Book a Consultation</a>
-        <a href="services.php" class="btn btn-white">All Services →</a>
+        <a href="/contact" class="btn btn-gold btn-lg">Book a Consultation</a>
+        <a href="/services" class="btn btn-white">All Services →</a>
       </div>
     </div>
   </div>

@@ -1,32 +1,26 @@
 ```
-# Logs
-error_log
-
-# Environment
-.env
-.env.local
-.env.*
+# Compiled and build artifacts
+*.pyc
+__pycache__/
 
 # Dependencies
 vendor/
 node_modules/
 
-# Build artifacts
-dist/
-build/
-*.min.js
-*.min.css
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS
-.DS_Store
-Thumbs.db
-
-# PHP
-*.php~
+# Web server
+.htaccess
 ```

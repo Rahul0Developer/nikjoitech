@@ -231,8 +231,8 @@
       <h2>Ready to Automate Your Plant?</h2>
       <p>Get a free site assessment and automation feasibility report from our engineers.</p>
       <div class="btn-group">
-        <a href="contact.php" class="btn btn-gold btn-lg">Request Free Assessment</a>
-        <a href="services.php" class="btn btn-white">All Services</a>
+        <a href="/contact" class="btn btn-gold btn-lg">Request Free Assessment</a>
+        <a href="/services" class="btn btn-white">All Services</a>
       </div>
     </div>
   </div>
