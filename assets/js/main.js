@@ -230,3 +230,53 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// Scroll Reveal Animation for 2026 Design
+document.addEventListener('DOMContentLoaded', function() {
+  // Reveal on scroll elements
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  
+  const revealOnScroll = () => {
+    revealElements.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      
+      if (elementTop < windowHeight * 0.85) {
+        el.classList.add('revealed');
+      }
+    });
+  };
+  
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // Check on load
+  
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+  
+  // Animate progress bars when visible
+  const progressBars = document.querySelectorAll('.progress-fill, .mini-fill');
+  const animateProgress = () => {
+    progressBars.forEach(bar => {
+      const elementTop = bar.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      
+      if (elementTop < windowHeight * 0.9) {
+        const width = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => {
+          bar.style.width = width;
+        }, 100);
+      }
+    });
+  };
+  
+  window.addEventListener('scroll', animateProgress);
+});
