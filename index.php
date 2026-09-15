@@ -1,7 +1,7 @@
 <?php
 // index.php — Nikoji Technologies Homepage
 $pageTitle = "Nikoji Technologies | Industrial Automation & EMS Partner in Delhi NCR";
-$pageDescription = "Leading industrial automation company in Delhi NCR offering PLC/SCADA systems, PCB design, electronics manufacturing (EMS), testing solutions & engineering consultancy. 15+ years experience, 200+ projects delivered.";
+$pageDescription = "Leading industrial automation company in Delhi NCR offering PLC/SCADA systems, PCB design, electronics manufacturing (EMS), testing solutions & engineering consultancy. 200+ projects delivered.";
 $pageKeywords = "industrial automation Delhi, PLC programming, SCADA systems, PCB design India, EMS manufacturer, electronics manufacturing services, ATE testing, VFD integration, control panel design, HMI development";
 $canonicalUrl = "https://nikojitechnologies.com/index.php";
 ?>
@@ -79,8 +79,8 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
       pointer-events: none;
     }
     .hero-inner {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 64px; align-items: center;
+      display: grid; grid-template-columns: 1fr;
+      gap: 0; align-items: center;
     }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
@@ -168,34 +168,6 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
       background: linear-gradient(135deg, rgba(13,31,24,0.95) 0%, rgba(13,31,24,0.85) 40%, rgba(13,31,24,0.6) 100%);
     }
     
-    /* Hero SVG Animation */
-    .hero-visual {
-      position: relative; display: flex; align-items: center; justify-content: center;
-    }
-    .hero-svg-wrap {
-      width: 100%; max-width: 520px;
-      position: relative;
-    }
-    .hero-card-float {
-      position: absolute;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 12px 16px;
-      box-shadow: var(--shadow);
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--text);
-      white-space: nowrap;
-      animation: float-card 3s ease-in-out infinite;
-    }
-    .hero-card-float.c1 { top: 10%; left: -8%; animation-delay: 0s; }
-    .hero-card-float.c2 { bottom: 18%; right: -8%; animation-delay: 1.5s; }
-    .hero-card-float .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; }
-    @keyframes float-card {
-      0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)}
-    }
-
     /* ── About ── */
     .about-split {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -310,7 +282,6 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
 
     @media(max-width:1024px){
       .hero-inner { grid-template-columns:1fr; }
-      .hero-visual { display:none; }
       .about-split { grid-template-columns:1fr; }
       .why-grid { grid-template-columns:1fr 1fr; }
       .sectors-grid { grid-template-columns:repeat(2,1fr); }
@@ -351,7 +322,7 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
           &amp; Electronics Manufacturing
         </h1>
         <p class="hero-desc">
-          Nikoji Technologies is Delhi NCR's trusted partner for industrial automation, PCB design, EMS, and testing solutions. We deliver turnkey systems that boost productivity by 40% while reducing operational costs — backed by 15+ years of engineering excellence.
+          Nikoji Technologies is Delhi NCR's trusted partner for industrial automation, PCB design, EMS, and testing solutions. We deliver turnkey systems that boost productivity by 40% while reducing operational costs — backed by proven engineering excellence.
         </p>
         <div class="hero-actions">
           <a href="contact.php" class="btn btn-primary btn-lg" aria-label="Get a free consultation">
@@ -388,104 +359,6 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
         </div>
       </div>
 
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-svg-wrap">
-          <!-- Industrial SVG Animation -->
-          <svg viewBox="0 0 500 460" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%">
-            <!-- Background grid -->
-            <defs>
-              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,107,79,0.06)" stroke-width="1"/>
-              </pattern>
-              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#006B4F;stop-opacity:1"/>
-                <stop offset="100%" style="stop-color:#004d38;stop-opacity:1"/>
-              </linearGradient>
-            </defs>
-            <rect width="500" height="460" fill="url(#grid)"/>
-
-            <!-- Central machine body -->
-            <rect x="140" y="120" width="220" height="200" rx="16" fill="url(#grad1)"/>
-            <rect x="155" y="135" width="190" height="170" rx="10" fill="rgba(255,255,255,0.05)"/>
-
-            <!-- Display screen -->
-            <rect x="170" y="150" width="160" height="100" rx="6" fill="#0a1f16"/>
-            <!-- Screen content - PCB traces -->
-            <line x1="185" y1="165" x2="315" y2="165" stroke="#FFD700" stroke-width="1.5" opacity="0.6">
-              <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2s" repeatCount="indefinite"/>
-            </line>
-            <line x1="185" y1="180" x2="280" y2="180" stroke="#00d4aa" stroke-width="1" opacity="0.5">
-              <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" begin="0.3s" repeatCount="indefinite"/>
-            </line>
-            <line x1="185" y1="195" x2="295" y2="195" stroke="#FFD700" stroke-width="1" opacity="0.4">
-              <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
-            </line>
-            <circle cx="220" cy="215" r="12" fill="none" stroke="#00d4aa" stroke-width="2">
-              <animate attributeName="r" values="10;14;10" dur="2s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="220" cy="215" r="5" fill="#00d4aa" opacity="0.8"/>
-            <text x="240" y="220" fill="rgba(255,255,255,0.7)" font-size="10" font-family="monospace">ONLINE</text>
-
-            <!-- Buttons row -->
-            <rect x="170" y="260" width="28" height="28" rx="4" fill="#FFD700"/>
-            <rect x="206" y="260" width="28" height="28" rx="4" fill="rgba(255,255,255,0.15)"/>
-            <rect x="242" y="260" width="28" height="28" rx="4" fill="rgba(255,255,255,0.15)"/>
-            <rect x="278" y="260" width="52" height="28" rx="4" fill="rgba(0,212,170,0.3)"/>
-
-            <!-- Robotic Arm -->
-            <g>
-              <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="3s" repeatCount="indefinite"/>
-              <!-- Arm base -->
-              <rect x="330" y="200" width="20" height="60" rx="6" fill="#FFD700" opacity="0.9"/>
-              <!-- Arm segment 1 -->
-              <line x1="340" y1="200" x2="380" y2="160" stroke="#006B4F" stroke-width="8" stroke-linecap="round"/>
-              <!-- Arm segment 2 -->
-              <line x1="380" y1="160" x2="400" y2="130" stroke="#004d38" stroke-width="6" stroke-linecap="round"/>
-              <!-- End effector -->
-              <circle cx="400" cy="125" r="10" fill="#FFD700"/>
-              <line x1="395" y1="115" x2="390" y2="108" stroke="#333" stroke-width="3" stroke-linecap="round"/>
-              <line x1="405" y1="115" x2="410" y2="108" stroke="#333" stroke-width="3" stroke-linecap="round"/>
-            </g>
-
-            <!-- Conveyor base -->
-            <rect x="80" y="340" width="340" height="40" rx="8" fill="#1a1a2e"/>
-            <rect x="80" y="340" width="340" height="12" rx="6" fill="#2a2a4e"/>
-            <!-- Conveyor dots -->
-            <circle cx="120" cy="346" r="5" fill="#444">
-              <animateTransform attributeName="transform" type="translate" values="0,0;60,0;0,0" dur="2s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="200" cy="346" r="5" fill="#444">
-              <animateTransform attributeName="transform" type="translate" values="0,0;60,0;0,0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
-            </circle>
-
-            <!-- Floating particles -->
-            <circle cx="80" cy="180" r="4" fill="var(--gold)" opacity="0.5">
-              <animate attributeName="cy" values="180;160;180" dur="3s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="440" cy="240" r="3" fill="#00d4aa" opacity="0.6">
-              <animate attributeName="cy" values="240;220;240" dur="2.5s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="100" cy="280" r="5" fill="rgba(0,107,79,0.4)">
-              <animate attributeName="cy" values="280;260;280" dur="3.5s" repeatCount="indefinite"/>
-            </circle>
-
-            <!-- PCB traces bottom -->
-            <path d="M 80 400 L 120 400 L 120 420 L 200 420" stroke="rgba(0,107,79,0.4)" stroke-width="2" fill="none"/>
-            <path d="M 420 400 L 380 400 L 380 420 L 300 420" stroke="rgba(255,215,0,0.3)" stroke-width="2" fill="none"/>
-          </svg>
-
-          <!-- Floating stat cards -->
-          <div class="hero-card-float c1">
-            <span class="dot" style="background:#00d4aa"></span> System Online — 99.7%
-          </div>
-          <div class="hero-card-float c2">
-            <span class="dot" style="background:#FFD700"></span> 15+ Years Experience
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -501,7 +374,7 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
         <div class="stat-label">Industrial Clients</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" data-count="15" data-suffix="+" >0+</div>
+        <div class="stat-number" data-count="13" data-suffix="+" >0+</div>
         <div class="stat-label">Years Experience</div>
       </div>
       <div class="stat-item">
