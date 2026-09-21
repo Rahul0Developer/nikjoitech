@@ -298,21 +298,21 @@ $canonicalUrl = "https://nikojitechnologies.com/index.php";
 <?php include 'inc/navbar.php'; ?>
 
 <!-- ════════════════════════════
-     HERO
+     HERO SECTION
 ═════════════════════════════ -->
 <section class="hero" id="home" aria-label="Hero">
   <!-- Hero Video Background -->
-  <div class="hero-video-wrap">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="assets/images/Subject_A_cinematic_photorea.mp4" type="video/mp4">
+  <div class="hero-video-container">
+    <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1581091226825-a6a2a5a8c8d4?w=1920&q=80">
+      <source src="assets/images/hero-background.mp4" type="video/mp4">
     </video>
-    <div class="hero-video-overlay"></div>
   </div>
-  
-  <div class="container">
-    <div class="hero-inner">
+  <div class="hero-overlay"></div>
+  <div class="hero-image-fallback"></div>
 
-      <div class="hero-content">
+  <div class="container">
+    <div class="hero-content">
+    <div class="hero-content">
         <div class="hero-badge">
           <span></span> ISO 9001:2015 Certified Company
         </div>
